@@ -1,0 +1,6 @@
+express handlebars 
+there is a layout which wraps around everything
+thigns like html body tags 
+this layout wraps around views,
+and each thing in the layout neednt be 
+repeated for every view indiidualy

@@ -1,0 +1,29 @@
+{
+    "name": "mongodb-passport-express-project",
+    "version": "1.0.0",
+    "description": "mongodb and express app with authentication",
+    "main": "app.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=production nodemon app",
+        "dev": "cross-env NODE_ENV=development nodemon app"
+    },
+    "author": "Vignesh V",
+    "license": "MIT",
+    "dependencies": {
+        "bcrypt": "^5.0.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^4.0.4",
+        "express-session": "^1.17.1",
+        "mongo-connect": "0.0.6",
+        "mongoose": "^5.9.20",
+        "morgan": "^1.10.0",
+        "passport": "^0.4.1",
+        "passport-google-oauth20": "^2.0.0",
+        "passport-local": "^1.0.0"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.2",
+        "nodemon": "^2.0.4"
+    }
+}
