@@ -1,0 +1,15 @@
+body {
+    background-color: #f4f4f4;
+}
+
+p {
+    text-align: center;
+    margin: 0 1em !important;
+}
+
+.login-container {
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    vertical-align: middle;
+}
