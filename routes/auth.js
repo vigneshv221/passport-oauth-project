@@ -18,4 +18,11 @@ router.get(
     }
 );
 
+//@desc     Logout
+//@route    GET /auth/logout
+router.get("/logout", (req, res) => {
+    req.logout(); //Passport function on req object which terminates user session
+    res.redirect("/");
+});
+
 module.exports = router;
