@@ -5,6 +5,8 @@ const morgan = require("morgan");
 const session = require("express-session");
 const exphbs = require("express-handlebars"); //Express Handlebars
 const passport = require("passport");
+const mongoose = require("mongoose");
+const MongoStore = require("connect-mongo")(session);
 const connectDB = require("./config/dbconfig");
 
 //Loading config
@@ -40,6 +42,7 @@ app.use(
         secret: "A9qbSrt-%tY098",
         resave: false,
         saveUninitialized: false,
+        store: new MongoStore({ mongooseConnection: mongoose.connection }), //Store session in mongodb, mongoose.connection gives current mongoose connection
     })
 );
 
